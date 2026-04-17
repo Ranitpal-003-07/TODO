@@ -52,9 +52,9 @@ export function FloatingNavbar({
       <div className={styles.navbar}>
         <div className={styles.brandBlock}>
           <div className={styles.brandMark}>OO</div>
-          <div>
+          <div className={styles.brandText}>
             <p className={styles.brandName}>Orbit Ops</p>
-            <span className={styles.brandTag}>Task command center</span>
+            <span className={styles.brandTag}>task grid</span>
           </div>
         </div>
 

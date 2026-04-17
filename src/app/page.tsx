@@ -39,7 +39,7 @@ export default function Home() {
   const [draft, setDraft] = useState<TaskDraft>(initialDraft);
   const [isUploading, setIsUploading] = useState(false);
   const [themeMode, setThemeMode] = useState<ThemeMode>(() => {
-    if (typeof window === "undefined") return "system";
+    if (typeof window === "undefined") return "dark";
 
     const savedTheme = window.localStorage.getItem(THEME_STORAGE_KEY);
 
@@ -47,7 +47,7 @@ export default function Home() {
       savedTheme === "dark" ||
       savedTheme === "system"
       ? savedTheme
-      : "system";
+      : "dark";
   });
   const hasPersistedRef = useRef(false);
 
